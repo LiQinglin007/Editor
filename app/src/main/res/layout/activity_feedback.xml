@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.lql.editor.activity.myaccount.ToEvaluateActivity">
+
+
+    <include layout="@layout/include_title_layout"></include>
+
+
+    <EditText
+        android:layout_marginTop="@dimen/px_15"
+        android:id="@+id/feedback_content_ed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_320"
+        android:background="@color/color_white"
+        android:gravity="start"
+        android:hint="请输入对我们的意见或建议"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingTop="@dimen/px_15"
+        android:textSize="@dimen/px_26"
+        android:textColorHint="@color/color_ccc"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/color_e0e0e0"
+        ></View>
+
+
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></View>
+
+    <Button
+        android:id="@+id/feedback_submit_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_36"
+        android:layout_marginRight="@dimen/px_36"
+        android:layout_marginBottom="@dimen/px_20"
+        android:background="@drawable/back_sel"
+        android:text="提交"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/px_35"/>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.main.MainActivity3">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_ly"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <com.example.lql.editor.view.NoScrollableViewPager
+            android:id="@+id/v_detail_vp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+            <android.support.v4.view.PagerTitleStrip
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:background="#0000"
+                android:textColor="#ffff" />
+        </com.example.lql.editor.view.NoScrollableViewPager>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/color_e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--首页-->
+            <LinearLayout
+                android:id="@+id/main_ly"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/main_img"
+                    android:src="@drawable/icon_home_sel"
+                    android:paddingBottom="@dimen/px_15"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <!--服务-->
+            <LinearLayout
+                android:id="@+id/service_ly"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/service_img"
+                    android:src="@drawable/icon_sevice_nor"
+                    android:paddingBottom="@dimen/px_15"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+            <!--工作室-->
+            <LinearLayout
+                android:id="@+id/studio_ly"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/studio_img"
+                    android:src="@drawable/icon_stor_nor"
+                    android:paddingBottom="@dimen/px_15"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+            <!--我的-->
+            <LinearLayout
+                android:id="@+id/me_ly"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/me_img"
+                    android:src="@drawable/icon_mine_nor"
+                    android:paddingBottom="@dimen/px_15"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

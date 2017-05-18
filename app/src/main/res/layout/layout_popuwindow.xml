@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/color_white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/pop_ly1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="@dimen/px_20"
+            android:paddingRight="@dimen/px_35"
+            android:paddingLeft="@dimen/px_35"
+            android:paddingBottom="@dimen/px_20"
+            android:background="@color/color_white"
+            android:id="@+id/pop_text1"
+            android:text="期刊职称论文查重"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/pop_img1"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/pop_ly2"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center_vertical|right"
+            android:paddingTop="@dimen/px_20"
+            android:paddingRight="@dimen/px_35"
+            android:paddingLeft="@dimen/px_35"
+            android:paddingBottom="@dimen/px_20"
+            android:background="@color/color_white"
+            android:id="@+id/pop_text2"
+            android:text="学位论文分段查重"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/pop_img2"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/pop_ly3"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center_vertical|right"
+            android:paddingTop="@dimen/px_20"
+            android:paddingRight="@dimen/px_35"
+            android:paddingLeft="@dimen/px_35"
+            android:paddingBottom="@dimen/px_20"
+            android:background="@color/color_white"
+            android:id="@+id/pop_text3"
+            android:text="本科学位PMLC查重"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/pop_img3"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/pop_ly4"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center_vertical|right"
+            android:paddingTop="@dimen/px_20"
+            android:paddingRight="@dimen/px_25"
+            android:paddingLeft="@dimen/px_35"
+            android:paddingBottom="@dimen/px_20"
+            android:background="@color/color_white"
+            android:id="@+id/pop_text4"
+            android:text="硕博论文VIP系统查重"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/pop_img4"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@drawable/icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

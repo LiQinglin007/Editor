@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/px_88"
+              android:orientation="vertical"
+              android:background="@color/color_FFFFFF"
+              android:paddingTop="@dimen/px_15">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+
+    <ImageView
+        android:id="@+id/titleBar_left_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:src="@drawable/btn_back"
+        />
+
+
+    <TextView
+        android:id="@+id/title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/color_title"
+        android:text="忘记密码"
+        android:textSize="@dimen/px_36"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="invisible"
+        />
+    </LinearLayout>
+
+    <View
+        android:paddingTop="@dimen/px_5"
+        android:background="@color/color_e0e0e0"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/px_10"
+        android:layout_height="@dimen/px_1"></View>
+</LinearLayout>

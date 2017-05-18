@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_account_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.lql.editor.activity.myaccount.MyAccountSettingActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/include_title_layout"></include>
+
+        <!--选择头像-->
+        <LinearLayout
+            android:id="@+id/setting_choose_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/px_15"
+            android:paddingTop="@dimen/px_15">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="头像"
+                android:textSize="@dimen/px_30"/>
+
+
+            <com.example.lql.editor.utils.CircleImageView
+                android:id="@+id/myaccount_heat_img"
+                android:layout_width="@dimen/px_120"
+                android:layout_height="@dimen/px_120"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginRight="@dimen/px_20"
+                fresco:placeholderImage="@drawable/icon_head_nor"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/px_10"
+                android:paddingRight="@dimen/px_30"
+                android:src="@drawable/btn_next"/>
+        </LinearLayout>
+
+        <!--昵称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_88"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@color/color_FFFFFF"
+            android:paddingRight="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_30"
+                android:textColor="@color/color_333"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="昵称"
+                android:textSize="@dimen/px_30"/>
+
+            <com.example.lql.editor.utils.ClearEditText
+                android:id="@+id/setting_name_cet"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入昵称"
+                android:gravity="right|center_vertical"
+                android:maxLength="20"
+                android:textColorHint="@color/color_999999"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:textSize="@dimen/px_30"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/color_e0e0e0"></View>
+
+        <!--性别-->
+        <LinearLayout
+            android:id="@+id/setting_choose_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_88"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_30"
+                android:textColor="@color/color_333"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="性别"
+                android:textSize="@dimen/px_30"/>
+
+            <TextView
+                android:id="@+id/setting_sex_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/px_30"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/px_20"
+                android:src="@drawable/btn_next"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/color_e0e0e0"></View>
+
+        <!--生日-->
+        <LinearLayout
+            android:id="@+id/setting_choose_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_88"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_30"
+                android:textColor="@color/color_333"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="生日"
+                android:textSize="@dimen/px_30"/>
+
+            <TextView
+                android:id="@+id/setting_birthday_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/px_30"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/px_20"
+                android:src="@drawable/btn_next"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/color_e0e0e0"></View>
+
+
+        <!--学校-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_88"
+            android:background="@color/color_FFFFFF"
+            android:paddingRight="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_weight="1"
+                android:textColor="@color/color_333"
+                android:gravity="center_vertical"
+                android:text="学校"
+                android:textSize="@dimen/px_30"/>
+
+            <com.example.lql.editor.utils.ClearEditText
+                android:id="@+id/setting_school_cet"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="right|center_vertical"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px_30"
+                android:maxLength="15"
+                android:background="@null"
+                android:textColorHint="@color/color_999999"
+                android:hint="请输入学校"
+                android:paddingLeft="@dimen/px_20"
+                android:textSize="@dimen/px_30"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/color_e0e0e0"></View>
+
+        <!--职业-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_88"
+            android:background="@color/color_FFFFFF"
+            android:paddingRight="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_30"
+                android:textColor="@color/color_333"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="职业"
+                android:textSize="@dimen/px_30"/>
+
+            <com.example.lql.editor.utils.ClearEditText
+                android:id="@+id/setting_occupation_cet"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/px_30"
+                android:maxLength="15"
+                android:background="@null"
+                android:textColorHint="@color/color_999999"
+                android:hint="请输入职业"
+                android:paddingLeft="@dimen/px_20"
+                android:textSize="@dimen/px_30"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/color_e0e0e0"></View>
+
+
+        <!--学历-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_88"
+            android:background="@color/color_FFFFFF"
+            android:paddingRight="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_weight="1"
+                android:textColor="@color/color_333"
+                android:gravity="center_vertical"
+                android:text="学历"
+                android:textSize="@dimen/px_30"/>
+
+            <com.example.lql.editor.utils.ClearEditText
+                android:id="@+id/setting_education_cet"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px_30"
+                android:gravity="right|center_vertical"
+                android:background="@null"
+                android:hint="请输入学历"
+                android:maxLength="15"
+                android:textColorHint="@color/color_999999"
+                android:paddingLeft="@dimen/px_20"
+                android:textSize="@dimen/px_30"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/color_e0e0e0"></View>
+
+
+        <!--职称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_88"
+            android:background="@color/color_FFFFFF"
+            android:paddingRight="@dimen/px_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_333"
+                android:text="职称"
+                android:textSize="@dimen/px_30"/>
+
+            <com.example.lql.editor.utils.ClearEditText
+                android:id="@+id/setting_academictitle_cet"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/px_30"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请输入职称"
+                android:maxLength="15"
+                android:textColorHint="@color/color_999999"
+                android:paddingLeft="@dimen/px_20"
+                android:textSize="@dimen/px_30"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/color_e0e0e0"></View>
+
+        <Button
+            android:id="@+id/setting_save_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_36"
+            android:layout_marginRight="@dimen/px_36"
+            android:layout_marginTop="@dimen/px_40"
+            android:background="@drawable/back_sel"
+            android:text="保存"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/px_35"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

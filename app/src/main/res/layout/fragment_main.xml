@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.lql.editor.fragment.MainFragment">
+
+    <include layout="@layout/include_title_layout"></include>
+
+    <ListView
+        android:divider="@color/color_e0e0e0"
+        android:dividerHeight="@dimen/px_1"
+        android:id="@+id/fragment_main_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>

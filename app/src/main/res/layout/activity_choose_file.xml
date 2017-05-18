@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lql.editor.activity.service.ChooseFileActivity">
+
+
+    <include layout="@layout/include_title_layout"></include>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.lql.editor.view.MyListView
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:background="@color/color_white"
+                android:id="@+id/choose_file_mylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.example.lql.editor.view.MyListView>
+
+
+            <TextView
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_15"
+                android:text="提示：如需添加文件库文件，请使用电脑浏览器访问地址"
+                android:id="@+id/choose_file_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:text="复制地址"
+                android:gravity="right"
+                android:paddingTop="@dimen/px_10"
+                android:paddingBottom="@dimen/px_10"
+                android:id="@+id/choose_file_copewebsite"
+                android:textColor="@color/color_1AB394"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/choose_file_submit_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1AB394"
+        android:text="提交"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/px_30"/>
+
+</LinearLayout>

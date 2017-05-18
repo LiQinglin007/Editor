@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_40"
+        android:paddingTop="@dimen/px_40"
+        android:text="选择性别"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_2"
+        android:background="@color/color_C6C5C5"></View>
+
+
+    <LinearLayout
+        android:id="@+id/choose_sex_man_ly"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingLeft="@dimen/px_40"
+            android:paddingTop="@dimen/px_20"
+            android:text="男"/>
+
+
+        <ImageView
+            android:id="@+id/choose_sex_man_img"
+            android:src="@drawable/btn_choose_sel"
+            android:paddingRight="@dimen/px_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/choose_sex_woman_ly"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingLeft="@dimen/px_40"
+            android:paddingTop="@dimen/px_20"
+            android:text="女"/>
+
+
+        <ImageView
+            android:id="@+id/choose_sex_woman_img"
+            android:src="@drawable/btn_choose_nor"
+            android:paddingRight="@dimen/px_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

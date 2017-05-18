@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notice_details"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context="com.example.lql.editor.activity.main.NoticeDetailsActivity">
+
+    <include layout="@layout/include_title_layout"></include>
+
+    <TextView
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@color/color_white"
+        android:id="@+id/notice_title"
+        android:textSize="@dimen/px_32"
+        android:textColor="@color/color_333"
+        android:paddingLeft="@dimen/px_24"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:background="@color/color_white"
+        android:id="@+id/notice_time"
+        android:paddingTop="@dimen/px_15"
+        android:textSize="@dimen/px_30"
+        android:paddingLeft="@dimen/px_24"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/notice_content"
+        android:background="@color/color_white"
+        android:paddingTop="@dimen/px_15"
+        android:paddingRight="@dimen/px_24"
+        android:textColor="@color/color_666"
+        android:textSize="@dimen/px_28"
+        android:paddingLeft="@dimen/px_24"
+        android:paddingBottom="@dimen/px_20"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

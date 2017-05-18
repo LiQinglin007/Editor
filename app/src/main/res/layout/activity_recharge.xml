@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.lql.editor.activity.myaccount.RechargeActivity">
+
+    <include layout="@layout/include_title_layout"></include>
+
+
+    <EditText
+        android:layout_marginTop="@dimen/px_20"
+        android:paddingTop="@dimen/px_20"
+        android:paddingLeft="@dimen/px_10"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingRight="@dimen/px_10"
+        android:background="@color/color_white"
+        android:id="@+id/recharge_account_ed"
+        android:textColorHint="@color/color_999999"
+        android:hint="请输入卡密账号"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_90"/>
+
+    <View
+        android:background="@color/color_e0e0e0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"></View>
+
+    <EditText
+        android:paddingTop="@dimen/px_20"
+        android:paddingRight="@dimen/px_10"
+        android:paddingLeft="@dimen/px_10"
+        android:password="true"
+        android:paddingBottom="@dimen/px_20"
+        android:textColorHint="@color/color_999999"
+        android:background="@color/color_white"
+        android:id="@+id/recharge_pwd_ed"
+        android:hint="请输入密码"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_90"/>
+
+
+
+
+    <Button
+        android:id="@+id/recharge_submit_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_36"
+        android:layout_marginRight="@dimen/px_36"
+        android:layout_marginTop="@dimen/px_60"
+        android:background="@drawable/back_sel"
+        android:text="确认充值"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/px_35"/>
+
+
+
+    <TextView
+        android:text="提示：复制这条网址，打开手机淘宝，去官方店铺进行卡密账号的 购买"
+        android:paddingTop="@dimen/px_20"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:textSize="@dimen/px_24"
+        android:textColor="@color/color_999999"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/recharge_address_tv"
+        android:paddingTop="@dimen/px_10"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/px_10"
+        android:id="@+id/recharge_copyaddress_tv"
+        android:paddingTop="@dimen/px_10"
+        android:textColor="@color/color_1AB394"
+        android:gravity="right"
+        android:textSize="@dimen/px_30"
+        android:text="复制地址"
+        android:paddingLeft="@dimen/px_10"
+        android:paddingRight="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

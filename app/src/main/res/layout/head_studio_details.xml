@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:background="@color/background"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/px_20"
+              android:layout_height="wrap_content">
+
+   <!--title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/px_20"
+        android:paddingLeft="@dimen/px_20"
+        android:gravity="center_vertical"
+        android:background="@drawable/pic_bg"
+        android:layout_height="wrap_content">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/heat_studiodetails_img"
+            android:layout_width="@dimen/px_134"
+            android:layout_height="@dimen/px_134"
+            fresco:placeholderImage="@drawable/gongzuoshi1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_150"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px_10"
+            android:paddingRight="@dimen/px_10">
+
+
+            <TextView
+                android:id="@+id/heat_studiodetails_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/px_30"
+                android:text=""/>
+            <TextView
+                android:textColor="@color/color_white"
+                android:id="@+id/heat_studiodetails_name_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_22"
+                android:text="诚信保证金：0"/>
+            <TextView
+                android:textSize="@dimen/px_22"
+                android:textColor="@color/color_white"
+
+                android:id="@+id/heat_studiodetails_name_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月销量：0"/>
+            <TextView
+                android:textSize="@dimen/px_22"
+                android:textColor="@color/color_white"
+                android:id="@+id/heat_studiodetails_name_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="信誉值：0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--介绍-->
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_20"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingTop="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="店铺简介"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/px_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/heat_studiodetails_introduce_tv"
+            android:layout_marginTop="@dimen/px_10"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_20"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:paddingTop="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/heat_studiodetails_number_tv"
+            android:text="用户评论（0）"
+            android:textColor="@color/color_333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:id="@+id/heat_studiodetails_user_lv"
+            android:layout_marginTop="@dimen/px_10"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:visibility="gone"
+                android:id="@+id/heat_studiodetails_user_img"
+                android:layout_width="@dimen/px_60"
+                android:layout_height="@dimen/px_60"
+                fresco:roundAsCircle="true"
+                fresco:placeholderImage="@drawable/touxiang_pinglun"/>
+
+           <com.example.lql.editor.utils.CircleImageView
+               android:id="@+id/heat_studiodetails_user_img1"
+               android:layout_width="@dimen/px_60"
+               android:layout_height="@dimen/px_60"/>
+
+            <TextView
+                android:text=""
+                android:id="@+id/heat_studiodetails_user_tv"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/heat_studiodetails_usercontent_tv"
+            android:text=""
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_15"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heat_studiodetails_viewall_tv"
+                android:text="查看全部评论"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_10"
+                android:paddingBottom="@dimen/px_10"
+                android:textColor="@color/color_1AB394"
+                android:background="@drawable/back_no"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

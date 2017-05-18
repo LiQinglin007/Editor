@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_999999">#999999</color>
+    <color name="no_color">#00FFFFFF</color>
+
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+
+    <color name="background">#F1F4F8</color>
+    <color name="color_000000">#000</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_1AB394">#1AB394</color>
+    <color name="color_FF5C0F">#FF5C0F</color>
+    <color name="color_C6C5C5">#C6C5C5</color>
+    
+    <color name="color_8E8E8E">#8E8E8E</color>
+    <color name="color_343434">#343434</color>
+    <color name="color_ff7200">#ff7200</color>
+
+
+    <color name="color_red">#FF0000</color>
+    <color name="color_title">#333</color>
+    <color name="color_e0e0e0">#e0e0e0</color>
+
+    <color name="color_e20000">#e20000</color>
+    <color name="color_ccc">#ccc</color>
+    <color name="color_333">#333</color>
+    <color name="color_666">#666</color>
+    <color name="color_e50000">#e50000</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+
+
+
+
+</resources>

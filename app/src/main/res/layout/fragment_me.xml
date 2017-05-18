@@ -1,0 +1,623 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/me_swipe"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/include_title_layout"></include>
+
+
+    <ScrollView
+        android:id="@+id/myScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- 个人信息-->
+        <LinearLayout
+            android:id="@+id/title_me"
+            android:background="@color/color_1AB394"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/px_240">
+
+            <com.example.lql.editor.utils.CircleImageView
+                android:layout_marginLeft="@dimen/px_24"
+                android:id="@+id/myaccount_heat_img"
+                fresco:roundAsCircle="true"
+                android:layout_width="@dimen/px_120"
+                android:layout_height="@dimen/px_120"
+                fresco:placeholderImage="@drawable/icon_head_nor1"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/myaccount_phone_tv"
+                    android:textSize="@dimen/px_32"
+                    android:text=""
+                    android:textColor="@color/color_FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/myaccount_money_tv"
+                    android:layout_marginTop="@dimen/px_24"
+                    android:text="账户余额："
+                    android:textColor="@color/color_FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/myaccount_next_img"
+                android:paddingRight="@dimen/px_24"
+                android:paddingLeft="@dimen/px_20"
+                android:src="@drawable/btn_jump_white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <!--我要服务-->
+        <LinearLayout
+            android:id="@+id/myaccount_myservice_ly"
+            android:layout_marginTop="@dimen/px_15"
+            android:orientation="horizontal"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/px_10"
+            android:paddingTop="@dimen/px_5"
+            android:layout_height="@dimen/px_98">
+
+
+            <ImageView
+                android:layout_marginLeft="@dimen/px_20"
+                android:src="@drawable/icon_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/px_20"
+                android:text="我的服务"
+                android:textColor="#333"
+                android:textSize="@dimen/px_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/color_e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"></View>
+        <!-- 查重订单  速审订单    降重订单-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/color_FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/myaccount_check_ly"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/px_20"
+                android:layout_marginBottom="@dimen/px_20"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_order_chachong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="@dimen/px_20"
+                    android:textSize="@dimen/px_26"
+                    android:text="查重订单"
+                    android:textColor="#666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/myaccount_summary_ly"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_order_sushen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="@dimen/px_20"
+                    android:text="速审订单"
+                    android:textSize="@dimen/px_26"
+                    android:textColor="#666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/myaccount_falls_ly"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_order_jiangchong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="@dimen/px_20"
+                    android:text="降重订单"
+                    android:textSize="@dimen/px_26"
+                    android:textColor="#666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--我的收藏、钱包账户、我的评价-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--我的收藏-->
+            <LinearLayout
+                android:id="@+id/myaccount_collection_ly"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/icon_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="我的收藏"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/px_30"
+                    android:textColor="#333"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/color_e0e0e0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"></View>
+            <!--钱包账户-->
+            <LinearLayout
+                android:id="@+id/myaccount_wallet_ly"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/icon_bag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="钱包账户"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/px_30"
+                    android:textColor="#333"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/color_e0e0e0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"></View>
+            <!--我的评价-->
+            <LinearLayout
+                android:id="@+id/myaccount_evaluate_ly"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/icon_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="我的评价"
+                    android:layout_width="0dp"
+                    android:textColor="#333"
+                    android:textSize="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--实名认证、修改密码、账号绑定-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--实名认证-->
+            <LinearLayout
+                android:id="@+id/myaccount_authentication_ly"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/icon_renzheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:textColor="#333"
+                    android:text="实名认证"
+                    android:textSize="@dimen/px_30"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/real_tv"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/color_e0e0e0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"></View>
+            <!--修改密码-->
+            <LinearLayout
+                android:id="@+id/myaccount_changepwd_ly"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/icon_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="修改密码"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/px_30"
+                    android:textColor="#333"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/color_e0e0e0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"></View>
+            <!--账号绑定-->
+            <LinearLayout
+                android:id="@+id/myaccount_bound_ly"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/icon_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="账号绑定"
+                    android:layout_width="0dp"
+                    android:textColor="#333"
+
+                    android:textSize="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/color_e0e0e0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"></View>
+            <!--工作室申请-->
+            <LinearLayout
+                android:id="@+id/myaccount_StudioApplication_ly"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/gongzuoshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="工作室申请"
+                    android:layout_width="0dp"
+                    android:textColor="#333"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/px_30"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/state_tv"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--意见反馈、关于我们、检测更新-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/px_60"
+            android:layout_height="wrap_content">
+            <!--意见反馈-->
+            <LinearLayout
+                android:id="@+id/myaccount_feedback_ly"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/icon_opinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="意见反馈"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/px_30"
+                    android:textColor="#333"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/color_e0e0e0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"></View>
+            <!--关于我们-->
+            <LinearLayout
+                android:id="@+id/myaccount_about_ly"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/icon_about_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="关于我们"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/px_30"
+                    android:textColor="#333"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/color_e0e0e0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"></View>
+            <!--检测更新-->
+            <LinearLayout
+                android:id="@+id/myaccount_toupdate_ly"
+                android:orientation="horizontal"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_15"
+                android:layout_height="@dimen/px_98">
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/icon_updata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="检测更新"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/px_30"
+                    android:textColor="#333"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:src="@drawable/btn_next"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/singout_save_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_36"
+            android:layout_marginRight="@dimen/px_36"
+            android:layout_marginTop="@dimen/px_80"
+            android:layout_marginBottom="@dimen/px_20"
+            android:background="@drawable/back_sel"
+            android:text="退出登录"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/px_35"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

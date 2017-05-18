@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title_layout"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_88"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/px_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="*"
+                    android:textColor="@color/color_red"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:text="联系方式："
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_28"/>
+
+                <EditText
+                    android:id="@+id/studioapply_phone_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px_10"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/color_333"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_20"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingTop="@dimen/px_20"
+                android:text="企事业单位申请"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/px_32"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_350"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="@dimen/px_10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/authentication_img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/px_10"
+                        android:paddingTop="@dimen/px_10"
+                        android:src="@drawable/icon_upload"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_100"
+                    android:layout_marginRight="@dimen/px_100"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/px_10"
+                    android:text="企业执照"
+                    android:paddingBottom="@dimen/px_10"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_28"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_320"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/px_50"
+                    android:layout_marginRight="@dimen/px_50"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="@dimen/px_10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/authentication_img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/px_10"
+                        android:paddingBottom="@dimen/px_10"
+                        android:src="@drawable/icon_upload"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_100"
+                    android:layout_marginRight="@dimen/px_100"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/px_10"
+                    android:text="机构代码照"
+                    android:paddingBottom="@dimen/px_10"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_28"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_10"
+                android:text="提示：三证未合一的企事业单位，请上传营业执照和机构代码照"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/px_28"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_20"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingTop="@dimen/px_20"
+                android:text="个人申请"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/px_32"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_320"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/px_50"
+                    android:layout_marginRight="@dimen/px_50"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="@dimen/px_10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/authentication_img3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/px_10"
+                        android:paddingTop="@dimen/px_10"
+                        android:src="@drawable/icon_upload"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_100"
+                    android:layout_marginRight="@dimen/px_100"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/px_10"
+                    android:text="身份证正面"
+                    android:paddingBottom="@dimen/px_10"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_28"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_320"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/px_50"
+                    android:layout_marginRight="@dimen/px_50"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="@dimen/px_10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/authentication_img4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/px_10"
+                        android:paddingTop="@dimen/px_10"
+                        android:src="@drawable/icon_upload"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_100"
+                    android:layout_marginRight="@dimen/px_100"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="@dimen/px_10"
+                    android:text="身份证反面"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_28"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_320"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/px_50"
+                    android:layout_marginRight="@dimen/px_50"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="@dimen/px_10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/authentication_img5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_100"
+                        android:layout_marginRight="@dimen/px_100"
+                        android:paddingTop="@dimen/px_10"
+                        android:paddingBottom="@dimen/px_10"
+                        android:src="@drawable/icon_upload"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_100"
+                    android:layout_marginRight="@dimen/px_100"
+                    android:paddingBottom="@dimen/px_10"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/px_10"
+                    android:text="本人手持身份证"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_28"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_10"
+                android:text="提示：请上传清晰有效的二代身份证照"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/px_28"/>
+
+
+            <Button
+                android:id="@+id/studioapply_submit_but"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_36"
+                android:layout_marginRight="@dimen/px_36"
+                android:layout_marginTop="@dimen/px_100"
+                android:layout_marginBottom="@dimen/px_20"
+                android:background="@drawable/back_sel"
+                android:text="提交"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/px_35"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

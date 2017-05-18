@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/index_layout_advert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_320"
+        android:background="@color/color_white"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/index_advertViewPager"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <com.example.lql.editor.widget.viewpager.PagerIndicator
+                android:id="@+id/index_pagerIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/px_20"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <!--在这里加上广告小喇叭-->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/color_white"
+        android:layout_marginTop="@dimen/px_10"
+        android:layout_marginBottom="@dimen/px_10"
+        android:paddingTop="@dimen/px_10"
+        android:paddingBottom="@dimen/px_10"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/px_20"
+            android:src="@drawable/gonggao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_marginLeft="@dimen/px_10"
+            android:paddingTop="@dimen/px_5"
+            android:paddingBottom="@dimen/px_5"
+            android:background="@color/color_e0e0e0"
+            android:layout_width="@dimen/px_1"
+            android:layout_height="match_parent"></View>
+
+        <com.example.lql.editor.view.SwitchViewGroup
+            android:id="@+id/switchViewGroup"
+            android:layout_width="@dimen/vertical_view_group_width"
+            android:layout_height="@dimen/vertical_view_group_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/px_2"
+        >
+
+        <ImageView
+            android:paddingLeft="@dimen/px_20"
+            android:background="@color/color_FFFFFF"
+            android:id="@+id/main_submission_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pic_tougao"/>
+
+        <ImageView
+            android:paddingRight="@dimen/px_20"
+            android:background="@color/color_FFFFFF"
+            android:layout_marginLeft="@dimen/px_2"
+            android:id="@+id/main_check_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pic_chachong"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/main_flag_img"
+            android:layout_width="0dp"
+            android:paddingLeft="@dimen/px_20"
+            android:background="@color/color_FFFFFF"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pic_jiangchong"/>
+
+        <ImageView
+            android:id="@+id/main_service_img"
+            android:background="@color/color_FFFFFF"
+            android:layout_marginLeft="@dimen/px_2"
+            android:paddingRight="@dimen/px_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pic_fuwu"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingTop="@dimen/px_20">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_hot"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_15"
+            android:text="热门服务"
+            android:textColor="@color/color_1AB394"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.lql.editor.activity.service.SubmissionActivity">
+
+    <include layout="@layout/include_title_layout"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/px_20"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:paddingTop="@dimen/px_20">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/submission_img"
+                    android:layout_width="@dimen/px_150"
+                    android:layout_height="@dimen/px_150"
+                    fresco:placeholderImage="@drawable/gongzuoshi1"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10">
+
+
+                    <TextView
+                        android:id="@+id/submission_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/color_333"/>
+
+
+                    <TextView
+                        android:id="@+id/submission_number_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:layout_weight="1"
+                        android:text="月销量：0"
+                        android:textColor="@color/color_999999"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/submission_price_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/color_e20000"/>
+
+
+                        <TextView
+                            android:id="@+id/submission_priceold_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:text=""
+                            android:textColor="@color/color_999999"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--文章标题-->
+            <LinearLayout
+                android:id="@+id/submission_ly1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:layout_marginTop="@dimen/px_20"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="文章标题"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_30"/>
+
+                <com.example.lql.editor.utils.ClearEditText
+                    android:id="@+id/submission_name_cet"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入文章标题"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/px_30"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/submission_v1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/color_e0e0e0"></View>
+
+            <!--学科方向-->
+            <LinearLayout
+                android:id="@+id/submission_subject_lv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="学科方向"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_30"/>
+
+                <TextView
+                    android:id="@+id/submission_subject_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:hint="请选择学科方向"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/px_30"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:src="@drawable/btn_next"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/submission_v2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/color_e0e0e0"></View>
+
+            <!--作者姓名-->
+            <LinearLayout
+                android:id="@+id/submission_ly3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="作者姓名"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_30"/>
+
+                <com.example.lql.editor.utils.ClearEditText
+                    android:id="@+id/submission_author_cet"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入作者姓名"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/px_30"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/submission_v3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/color_e0e0e0"></View>
+
+
+            <!--作者职称-->
+            <LinearLayout
+                android:id="@+id/submission_choose_saff"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="作者职称"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_30"/>
+
+                <TextView
+                    android:id="@+id/submission_saff_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:hint="请选择职称"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/px_30"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:src="@drawable/btn_next"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/submission_v4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/color_e0e0e0"></View>
+
+            <!--作者学历-->
+            <LinearLayout
+                android:id="@+id/submission_choose_education"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="作者学历"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_30"/>
+
+                <TextView
+                    android:id="@+id/submission_education_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:hint="请选择学历"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/px_30"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:src="@drawable/btn_next"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/submission_v5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/color_e0e0e0"></View>
+
+
+            <!--见刊时间-->
+            <LinearLayout
+                android:id="@+id/submission_ly6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="见刊时间"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_30"/>
+
+                <com.example.lql.editor.utils.ClearEditText
+                    android:id="@+id/submission_time_cet"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入见刊时间"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/px_30"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/submission_v6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/color_e0e0e0"></View>
+
+            <!--选择文件-->
+            <LinearLayout
+                android:id="@+id/submission_choose_file"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="选择文件"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_30"/>
+
+                <TextView
+                    android:id="@+id/submission_choosefile_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:hint="请选择文件"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/px_30"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20"
+                    android:src="@drawable/btn_next"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/submission_v7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/color_e0e0e0"></View>
+
+
+            <!--选择份数-->
+
+            <LinearLayout
+                android:id="@+id/submission_ly8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:layout_marginTop="@dimen/px_20"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="选择份数"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/px_30"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/px_20"
+                    android:paddingRight="@dimen/px_20">
+
+
+                    <ImageView
+                        android:id="@+id/ly3_minus_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/px_10"
+                        android:paddingRight="@dimen/px_10"
+                        android:src="@drawable/minus"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:paddingLeft="@dimen/px_10"
+                        android:paddingRight="@dimen/px_10">
+
+
+                        <EditText
+                            android:id="@+id/ly3_number_ed"
+                            android:layout_width="@dimen/px_100"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:layout_marginRight="@dimen/px_10"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:text="1"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ly3_add_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/px_2"
+                        android:paddingLeft="@dimen/px_10"
+                        android:paddingRight="@dimen/px_10"
+                        android:src="@drawable/plus"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/submission_v8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_1"
+                android:background="@color/color_e0e0e0"></View>
+
+
+            <Button
+                android:id="@+id/submission_submit_but"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_36"
+                android:layout_marginRight="@dimen/px_36"
+                android:layout_marginTop="@dimen/px_50"
+                android:background="@drawable/back_sel"
+                android:text="提交"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/px_35"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

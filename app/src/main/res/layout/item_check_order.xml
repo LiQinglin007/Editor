@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/background"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/px_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_84"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20"
+        android:paddingTop="@dimen/px_10">
+
+
+        <LinearLayout
+            android:id="@+id/item_checkorder_shop"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/stor"/>
+
+            <TextView
+                android:id="@+id/item_checkorder_studioname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_20"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/px_28"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_18"
+                android:src="@drawable/btn_next"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/item_checkorder_state_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px_20"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:textColor="@color/color_FF5C0F"
+            android:textSize="@dimen/px_28"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_20"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_190"
+        android:paddingTop="@dimen/px_10"
+        android:background="@color/color_f5f5f5"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/item_checkorder_img"
+            android:layout_width="@dimen/px_170"
+            android:layout_height="@dimen/px_170"
+            fresco:placeholderImage="@drawable/gongzuoshi1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_150"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_10">
+
+
+            <TextView
+                android:id="@+id/item_checkorder_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/px_26"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/px_5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_word1"/>
+
+                <TextView
+                    android:id="@+id/item_checkorder_type_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_4"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/px_24"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_checkorder_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/px_10"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/actionsheet_red"
+                android:textSize="@dimen/px_28"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_106"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color_white"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_15"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingRight="@dimen/px_20">
+
+        <TextView
+            android:id="@+id/item_checkorder_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px_20"
+            android:gravity="center_vertical"
+            android:text="同类文章检测平均时长为20分钟"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            android:layout_height="match_parent">
+
+
+
+
+        <TextView
+            android:id="@+id/item_checkorder_cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_66"
+            android:layout_marginRight="@dimen/px_20"
+            android:background="@drawable/back_no"
+            android:paddingBottom="@dimen/px_15"
+            android:paddingLeft="@dimen/px_25"
+            android:paddingRight="@dimen/px_25"
+            android:paddingTop="@dimen/px_15"
+            android:text="取消检测"
+            android:textColor="@color/color_1AB394"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/item_checkorder_evaluate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_66"
+            android:layout_marginRight="@dimen/px_20"
+            android:background="@drawable/back_no"
+            android:paddingBottom="@dimen/px_15"
+            android:paddingLeft="@dimen/px_25"
+            android:paddingRight="@dimen/px_25"
+            android:paddingTop="@dimen/px_15"
+            android:text="服务评价"
+            android:textColor="@color/color_1AB394"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/item_checkorder_report_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_66"
+            android:layout_marginRight="@dimen/px_20"
+            android:background="@drawable/back_no"
+            android:paddingBottom="@dimen/px_15"
+            android:paddingLeft="@dimen/px_25"
+            android:paddingRight="@dimen/px_25"
+            android:paddingTop="@dimen/px_15"
+            android:text="下载报告"
+            android:textColor="@color/color_1AB394"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

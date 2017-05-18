@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:gravity="right"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/pop_title_ly1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="@dimen/px_20"
+            android:paddingRight="@dimen/px_35"
+            android:paddingLeft="@dimen/px_35"
+            android:paddingBottom="@dimen/px_20"
+            android:background="@color/color_white"
+            android:text="速审"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/pop_title_ly2"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="@dimen/px_20"
+            android:paddingRight="@dimen/px_35"
+            android:paddingLeft="@dimen/px_35"
+            android:paddingBottom="@dimen/px_20"
+            android:background="@color/color_white"
+            android:text="查重"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/pop_title_ly3"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="@dimen/px_20"
+            android:paddingRight="@dimen/px_35"
+            android:paddingLeft="@dimen/px_35"
+            android:paddingBottom="@dimen/px_20"
+            android:background="@color/color_white"
+            android:text="降重"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
