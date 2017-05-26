@@ -74,27 +74,6 @@ public class StudioFragment extends Fragment implements View.OnClickListener {
         return view;
     }
 
-
-    @Override
-    public void setUserVisibleHint(boolean isVisibleToUser) {
-        //判断该Fragment时候已经正在前台显示  通过这两个判断，就可以知道什么时候去加载数据了
-        if (isVisibleToUser && isVisible()) {;
-            Page = 1;
-            getData(true, 0,false);
-        }
-        super.setUserVisibleHint(isVisibleToUser);
-    }
-
-
-//    @Override
-//    public void setUserVisibleHint(boolean isVisibleToUser) {
-//        //判断该Fragment时候已经正在前台显示  通过这两个判断，就可以知道什么时候去加载数据了
-//        if (isVisibleToUser && isVisible()) {
-//            initView();
-//        }
-//        super.setUserVisibleHint(isVisibleToUser);
-//    }
-
     private void initView() {
         defaulttv = (TextView) view.findViewById(R.id.studio_default_tv);
         bondtv = (TextView) view.findViewById(R.id.studio_bond_tv);
@@ -141,15 +120,6 @@ public class StudioFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-//        search.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-//            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-//                if (actionId == EditorInfo.IME_ACTION_SEND || (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
-//                    getData(true, 1);
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
 
 
         // 设置搜索框搜索取消搜索按钮
@@ -214,7 +184,6 @@ public class StudioFragment extends Fragment implements View.OnClickListener {
 
     private void getData(final boolean IsClrean, final int index, final boolean ToastType) {
         PreferenceUtils.setBoolean("Click", false);
-        sendBrocast();
 
         String Keywords = search.getText().toString().trim();
 //            0:默认1：保证金2：信誉3：销量
@@ -222,7 +191,6 @@ public class StudioFragment extends Fragment implements View.OnClickListener {
             @Override
             public void onSuccess(String response) {
                 PreferenceUtils.setBoolean("Click", true);
-                sendBrocast();
 
                 loading.setVisibility(View.GONE);
                 if (response.contains("<html>")) {
@@ -256,7 +224,6 @@ public class StudioFragment extends Fragment implements View.OnClickListener {
             public void onFailure(Throwable e) {
                 PreferenceUtils.setBoolean("Click", true);
                 loading.setVisibility(View.GONE);
-                sendBrocast();
                 if (index == 0) {
                     //停止刷新动画
                     mySwipeRefresh.setRefreshing(false);
@@ -307,11 +274,6 @@ public class StudioFragment extends Fragment implements View.OnClickListener {
     }
 
 
-    public void sendBrocast() {
-        Intent intent = new Intent();
-        intent.setAction("com.lql.MainActivity.setClick");
-        getActivity().sendBroadcast(intent);
-    }
 
 
 }

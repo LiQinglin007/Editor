@@ -304,8 +304,8 @@ public class StudioDetailsActivity extends Activity implements View.OnClickListe
 
                 break;
             case studio_collection_ly://收藏
-                boolean IsLogin = PreferenceUtils.getBoolean("IsLogin", false);
-                if (IsLogin) {
+                    boolean IsLogin = PreferenceUtils.getBoolean("IsLogin", false);
+                    if (IsLogin) {
                     SendRequest.UserFavorite(Userid, studioId, 2, new mOkCallBack() {
                         @Override
                         public void onSuccess(String response) {
@@ -388,17 +388,8 @@ public class StudioDetailsActivity extends Activity implements View.OnClickListe
     private void ToCallPhone() {
         //用intent启动拨打电话
         String TelphoneStr = mBean.getData().getTelphone();
-
-//        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + mBean.getData().getTelphone()));
         Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + TelphoneStr));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return;
         }
         startActivity(intent);

@@ -37,10 +37,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 //	FragmentTransaction transaction;
 
 
-    public static LinearLayout mainly;
-    public  static LinearLayout servicely;
-    public static LinearLayout studioly;
-    public static LinearLayout mely;
+
+
     private FrameLayout fragmently;
 
     MainFragment mMainFragment;
@@ -48,6 +46,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
     StudioFragment mStudioFragment;
     MeFragment mMeFragment;
 
+    public static LinearLayout mainly;
+    public  static LinearLayout servicely;
+    public static LinearLayout studioly;
+    public static LinearLayout mely;
 
     ImageView mainimg;
     ImageView serviceimg;

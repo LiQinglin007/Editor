@@ -82,7 +82,6 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
     public void initView() {
 
-
         HeatView = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_main_top, null);
         mListView = (ListView) view.findViewById(R.id.fragment_main_recycle);
         mListView.addHeaderView(HeatView);
@@ -271,7 +270,6 @@ public class MainFragment extends Fragment implements View.OnClickListener {
      * 获取首页服务
      */
     private void getServiceList() {
-
         SendRequest.ServiceList(page, roews, new mOkCallBack() {
             @Override
             public void onSuccess(String response) {

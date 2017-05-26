@@ -47,6 +47,7 @@ import static com.example.lql.editor.R.id.explain_ly2_tv;
 public class ServiceDetailsActivity extends Activity implements View.OnClickListener {
     private TextView title;
     private ImageView leftback;
+
     private com.facebook.drawee.view.SimpleDraweeView servicedetailsimg;
     private TextView servicedetailsnametv;
     private TextView servicedetailsnumbertv;

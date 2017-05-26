@@ -311,15 +311,7 @@
                 android:dividerHeight="@dimen/px_20"
                 android:background="@color/color_white"
                 android:divider="@null">
-
             </com.example.lql.editor.view.MyListView>
-
-            <!--<ImageView-->
-            <!--android:id="@+id/service_myview"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"/>-->
-
-
         </LinearLayout>
 
     </ScrollView>
